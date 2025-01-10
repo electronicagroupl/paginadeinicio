@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+    background: linear-gradient(270deg, #ff0000, #000000);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    color: white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 800px;
+    text-align: justify;
+    animation: fadeIn 2.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 1em;
+    animation: fadeIn 3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #D70000;
+    color: white;
+    transform: scale(1.05);
+}
+
+.contenedor {
+    text-align: center;
+    padding: 20px;
+}
+
+.burbuja {
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeIn 3s ease;
+    background: transparent; /* Se elimina el fondo rojo */
+    color: white;
+}
+
+.burbuja ul, .burbuja ol {
+    margin: 10px 20px;
+    text-align: left;
+}
+
+.burbuja ul li, .burbuja ol li {
+    margin: 5px 0;
+}
+
+/* Imagen */
+.lado-izquierda {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 4s ease;
+}
+
+/* Animaciones */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+
+    .burbuja {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+
+    .burbuja {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 8px 15px;
+    }
+}
