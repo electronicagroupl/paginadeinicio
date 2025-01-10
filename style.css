@@ -1,8 +1,7 @@
-/* Estilos generales */
 body {
     background: linear-gradient(270deg, #ff0000, #000000);
     background-size: 400% 400%;
-    animation: gradient-animation 7s ease infinite;
+    animation: gradient-animation 10s ease infinite;
     color: white;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -42,24 +41,23 @@ a {
 }
 
 button {
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white; 
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid red;
+    border-radius: 50px; 
     cursor: pointer;
     display: block;
     margin: 20px auto;
     font-size: 1em;
     animation: fadeIn 3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-    background-color: #D70000;
+    background-color: red;
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.1); 
 }
 
 .contenedor {
@@ -74,7 +72,7 @@ button:hover {
     margin: 20px auto;
     max-width: 800px;
     animation: fadeIn 3s ease;
-    background: transparent; /* Se elimina el fondo rojo */
+    background: transparent;
     color: white;
 }
 
@@ -87,7 +85,7 @@ button:hover {
     margin: 5px 0;
 }
 
-/* Imagen */
+
 .lado-izquierda {
     display: block;
     margin: 20px auto;
@@ -173,5 +171,11 @@ button:hover {
     button {
         font-size: 0.8em;
         padding: 8px 15px;
+    }
+
+    button:hover {
+        background-color: red;
+        color: white;
+        transform: scale(1.1);
     }
 }
